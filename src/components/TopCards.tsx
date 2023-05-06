@@ -1,29 +1,35 @@
 import React from 'react'
 
-const CARDS = [{
-  id: 1,
-  title: 'Card 1'
-},
-{
-  id: 2,
-  title: 'Card 2'
-},
-{
-  id: 3,
-  title: 'Card 3'
-}]
-
 const TopCards = () => {
   return (
-    <div className='grid lg:grid-cols-6 gap-4 p-4'>
-      {CARDS.map(card => (
-        <div 
-          key={card.id}
-          className='lg:col-span-2 col-span-1 w-full p-4 bg-white border rounded flex justify-between'
-        >{card.title}</div>  
-      ))
-
-      }
+    <div className='grid lg:grid-cols-5 gap-4 p-4'>
+        <div className='lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4  rounded-lg'>
+            <div className='flex flex-col w-full pb-4'>
+                <p className='text-2xl font-bold'>$7.765</p>
+                <p className='text-gray-600'>Daily Revanue</p>
+            </div>
+            <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
+                <span className='text-green-700 text-lg'>+18%</span>
+            </p>
+        </div>
+        <div className='lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4  rounded-lg'>
+            <div className='flex flex-col w-full pb-4'>
+                <p className='text-2xl font-bold'>$7.765</p>
+                <p className='text-gray-600'>Daily Revanue</p>
+            </div>   
+            <p className='bg-green-200 flex justify-center items-center p-2 rounded-lg'>
+                <span className='text-green-700 text-lg'>+18%</span>
+            </p> 
+        </div>
+        <div className=' bg-white felx justify-between w-full border p-4  rounded-lg'>
+            <div className='flex flex-col w-full pb-4'>
+                <p className='text-2xl font-bold'>$7.765</p>
+                <p className='text-gray-600'>Daily Revanue</p>
+            </div>  
+            <p>
+    
+            </p>
+        </div>
     </div>
   )
 }
