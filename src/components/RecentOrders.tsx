@@ -17,6 +17,7 @@ const RecentOredrs = () => {
                 <p text-gray-400 text-sm>{order.name.first}</p>
               </div>
               <p className='lg:flex md:hidden absolute right-6'>{order.date}</p>
+              <p className='lg:flex md:hidden absolute right-6'>{order.date}</p>
           </li>
         ))}
       </ul>
